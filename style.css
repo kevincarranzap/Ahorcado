@@ -1,0 +1,136 @@
+body{
+    background-color: #F3F5FC;
+}
+
+.logo{
+    margin-top: 6.4vw;/*24px*/
+    margin-bottom: 6.4vw;/*24px*/
+    margin-left: 4.27vw;/*16px*/
+    width: 8.53vw;/*32px*/
+}
+
+.pagina_bienvenida{
+    margin-top: 45.07vw;/*169px*/
+}
+
+.pagina_agregar_palabra{
+    margin-top: 0;
+}
+
+.adivinar{
+    display: none;
+    margin: 10.67vw auto;/*40px*/
+    background-color: aquamarine;
+}
+
+.entrada{
+    display: none;
+    width: 91.47vw;/*343px*/
+    height: 62.67vw;/*235px*/
+    margin: 0 auto;
+    margin-top: 14.93vw;/*56px*/
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8.53vw;/*16px*/
+    line-height: 150%;
+    color: #0A3871;
+
+    background-color: transparent;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.entrada::placeholder{
+    color: #0A3871;
+}
+
+.entrada:focus{
+    outline: none;
+}
+
+#alerta{
+    display: none;
+}
+
+.alerta_gris svg, .alerta_roja svg{
+    width: 4.27vw;/*16px*/
+    margin-left: 4.27vw;/*16px*/
+    margin-right: 2.13vw;/*8px*/
+}
+
+.alerta_gris svg path{
+    fill: #67808E;
+}
+
+.alerta_gris, .alerta_roja{
+    margin-top: 17.07vw;/*64px*/
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2vw;/*12px*/
+    line-height: 150%;
+    color: #67808E;
+
+    display: flex;
+    align-items: center;
+}
+
+.alerta_roja svg path{
+    fill: #dc1515;
+}
+
+.alerta_roja{
+    color: #dc1515;
+}
+
+.boton_iniciar, .boton_agregar, .boton_guardar, .boton_cancelar, .boton_nuevo, .boton_desistir{
+    display: block;
+    margin-top: 4.27vw;/*16px*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 91.47vw;/*343px*/
+    height: 17.87vw;/*67px*/
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.27vw;/*16px*/
+    line-height: 118%;
+
+    border: none;
+    border-radius: 6.4vw;/*24px*/
+}
+
+.boton_guardar, .boton_cancelar, .boton_nuevo, .boton_desistir{
+    display: none;
+}
+
+.boton_iniciar, .boton_guardar, .boton_nuevo{
+    background-color: #0A3871;
+    color: white;
+}
+
+.boton_iniciar{
+    width: 84.53vw;/*317px*/
+    height: 28vw;/*105px*/
+}
+
+.boton_agregar, .boton_cancelar, .boton_desistir{
+    background-color: transparent;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+.boton_agregar{
+    width: 74.13vw;/*278px*/
+}
+
+@media screen and (min-width:600px){
+}
+
+@media screen and (min-width:992px){
+}
