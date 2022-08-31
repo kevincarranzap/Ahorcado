@@ -20,7 +20,9 @@ body{
 .adivinar{
     display: none;
     margin: 10.67vw auto;/*40px*/
-    background-color: aquamarine;
+    background-color: transparent;
+    width: 81.07vw;/*304px*/
+    height: 30.93vw;/*116px*/
 }
 
 .entrada{

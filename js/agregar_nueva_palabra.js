@@ -14,7 +14,7 @@ boton_agregar.addEventListener("click", function(){
 var boton_guardar = document.querySelector(".boton_guardar");
 
 boton_guardar.addEventListener("click", function(){
-    palabras.push(document.querySelector(".entrada").value);
+    palabras.push(document.querySelector(".entrada").value.toUpperCase());
     document.querySelector(".entrada").value = "";
     iniciar_juego();
 });
