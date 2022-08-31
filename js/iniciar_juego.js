@@ -45,8 +45,20 @@ function dibujar_lineas(){
     tablero_palabras.closePath();
 }
 
+function verificarLetra(letra){
+    if(palabra_secreta.search(letra)!=-1){
+        return true;
+    }else{
+        return false
+    }
+}
+
 document.onkeydown = (e) => {
     if((e.key>="a" && e.key<="z")||e.key=="ñ"){
-        
+        if(verificarLetra(e.key)){
+
+        }else{
+            
+        }
     }
 }
