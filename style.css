@@ -17,6 +17,14 @@ body{
     margin-top: 0;
 }
 
+.ahorcado{
+    display: none;
+    margin: 10.67vw auto;/*40px*/
+    background-color: transparent;
+    width: 76.53vw;/*287px*/
+    height: 93.6vw;/*351px*/
+}
+
 .adivinar{
     display: none;
     margin: 10.67vw auto;/*40px*/
