@@ -52,6 +52,13 @@ function dibujar_letra_correcta(index){
     tablero_palabras.fillText(palabra_secreta[index],5+(index*(8.55+30)+(1-(palabra_secreta.length/8))*152) ,42);
 }
 
+function dibujar_letra_incorrecta(index){
+    tablero_palabras.font = "normal 32px Inter";
+    tablero_palabras.lineWidth = 4;
+    tablero_palabras.fillStyle = "#dc1515";
+    tablero_palabras.fillText(palabra_secreta[index],5+(index*(8.55+30)) ,115);
+}
+
 function verificarLetra(letra){
     if(palabra_secreta.search(letra)!=-1){
         return true;
@@ -65,7 +72,7 @@ document.onkeydown = (e) => {
         if(verificarLetra(e.key)){
 
         }else{
-
+            
         }
     }
 }
