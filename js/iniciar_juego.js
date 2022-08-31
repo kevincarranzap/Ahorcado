@@ -44,3 +44,9 @@ function dibujar_lineas(){
     tablero_palabras.stroke();
     tablero_palabras.closePath();
 }
+
+document.onkeydown = (e) => {
+    if((e.key>="a" && e.key<="z")||e.key=="ñ"){
+        
+    }
+}
