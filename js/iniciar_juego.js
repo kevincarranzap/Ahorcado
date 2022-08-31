@@ -1,6 +1,6 @@
 var boton_iniciar = document.querySelector(".boton_iniciar");
 
-var palabras = ["prueba","perro","sueños"];
+var palabras = ["PRUEBA"];
 var palabra_secreta;
 var letras = [];
 var errores = 0;
@@ -45,6 +45,13 @@ function dibujar_lineas(){
     tablero_palabras.closePath();
 }
 
+function dibujar_letra_correcta(index){
+    tablero_palabras.font = "normal 32px Inter";
+    tablero_palabras.lineWidth = 4;
+    tablero_palabras.fillStyle = "#0A3871";
+    tablero_palabras.fillText(palabra_secreta[index],5+(index*(8.55+30)+(1-(palabra_secreta.length/8))*152) ,42);
+}
+
 function verificarLetra(letra){
     if(palabra_secreta.search(letra)!=-1){
         return true;
@@ -58,7 +65,7 @@ document.onkeydown = (e) => {
         if(verificarLetra(e.key)){
 
         }else{
-            
+
         }
     }
 }
