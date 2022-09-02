@@ -192,6 +192,9 @@ body{
     .alerta_gris, .alerta_roja{
         margin-top: 2.08vw;/*16px*/
         font-size: 1.56vw;/*12px*/
+    }
+
+    .alerta_gris{
         color: #495057;
     }
 
@@ -217,4 +220,73 @@ body{
 }
 
 @media screen and (min-width:992px){
+    .logo{
+        margin-top: 2.78vw;/*40px*/
+        margin-bottom: 2.78vw;/*40px*/
+        margin-left: 5.83vw;/*84px*/
+        width: 2.16vw;/*31.09px*/
+    }
+
+    .pagina_bienvenida{
+        margin-top: 19.03vw;/*274px*/
+    }
+
+    .pagina_agregar_palabra{
+        margin-left: 26.11vw;/*376px*/
+        gap: 1.67vw;/*24px*/
+    }
+
+    .ahorcado{
+        margin-top: 3.47vw;/*50px*/
+        margin-left: 60.56vw;/*872px*/
+        margin-bottom: 2.95vw;/*43px*/
+        width: 20.42vw;/*294px*/
+        height: 25vw;/*360px*/
+    }
+    
+    .adivinar{
+        margin-top: -18.68vw;/*-269px*/
+        margin-left: 19.07vw;/*274px*/
+        width: 32.22vw;/*464px*/
+        height: 12.29vw;/*177px*/
+    }
+
+    .entrada{
+        width: 47.78vw;/*688px*/
+        height: 27.43vw;/*395px*/
+        margin-top: 2.22vw;/*32px*/
+        font-size: 2.22vw;/*32px*/
+    }
+    
+    .alerta_gris svg, .alerta_roja svg{
+        width: 1.11vw;/*16px*/
+        margin-left: 26.11vw;/*376px*/
+        margin-right: 0.56vw;/*8px*/
+    }
+    
+    .alerta_gris, .alerta_roja{
+        margin-top: 1.11vw;/*16px*/
+        font-size: 0.83vw;/*12px*/
+    }
+
+    .boton_iniciar, .boton_agregar, .boton_guardar, .boton_cancelar, .boton_nuevo, .boton_desistir{
+        margin-top: 1.11vw;/*16px*/
+        width: 23.06vw;/*332px*/
+        height: 4.65vw;/*67px*/
+
+        font-size: 1.11vw;/*16px*/
+        
+        border-radius: 1.67vw;/*24px*/
+    }
+    
+    .boton_iniciar{
+        font-size: 1.25vw;/*18px*/
+        width: 22.01vw;/*317px*/
+        height: 7.92vw;/*114px*/
+    }
+    
+    .boton_agregar{
+        margin-top: 2.64vw;/*38px*/
+        width: 19.44vw;/*280px*/
+    }
 }
