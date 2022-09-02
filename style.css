@@ -20,6 +20,7 @@ body{
 .ahorcado{
     display: none;
     margin: 10.67vw auto;/*40px*/
+    margin-bottom: 0;
     background-color: transparent;
     width: 76.53vw;/*287px*/
     height: 93.6vw;/*351px*/
@@ -140,6 +141,79 @@ body{
 }
 
 @media screen and (min-width:600px){
+    .logo{
+        margin-top: 9.73vw;/*74.72px*/
+        margin-bottom: 9.73vw;/*74.72px*/
+        margin-left: 5.21vw;/*40px*/
+        width: 4.05vw;/*31.09px*/
+    }
+
+    .pagina_bienvenida{
+        margin-top: 34.02vw;/*261.28px*/
+    }
+    
+    .pagina_agregar_palabra{
+        margin-top: 0;
+        margin-left: 5.21vw;/*40px*/
+        display: inline-flex;
+        gap: 3.13vw;/*24px*/
+    }
+
+    .ahorcado{
+        margin: 5.21vw auto;/*40px*/
+        margin-bottom: 0;
+        width: 38.28vw;/*294px*/
+        height: 46.88vw;/*360px*/
+    }
+    
+    .adivinar{
+        margin: 7.29vw auto;/*56px*/
+        width: 60.42vw;/*464px*/
+        height: 23.05vw;/*177px*/
+    }
+
+    .entrada{
+        width: 89.58vw;/*688px*/
+        height: 81.64vw;/*627px*/
+        margin-top: 5.38vw;/*41.28px*/
+        font-size: 4.17vw;/*32px*/
+    }
+    
+    .alerta_gris svg, .alerta_roja svg{
+        width: 2.08vw;/*16px*/
+        margin-left: 5.21vw;/*40px*/
+        margin-right: 1.04vw;/*8px*/
+    }
+
+    .alerta_gris svg path{
+        fill: #495057;
+    }
+    
+    .alerta_gris, .alerta_roja{
+        margin-top: 2.08vw;/*16px*/
+        font-size: 1.56vw;/*12px*/
+        color: #495057;
+    }
+
+    .boton_iniciar, .boton_agregar, .boton_guardar, .boton_cancelar, .boton_nuevo, .boton_desistir{
+        margin-top: 2.08vw;/*16px*/
+        width: 43.23vw;/*332px*/
+        height: 8.72vw;/*67px*/
+
+        font-size: 2.08vw;/*16px*/
+        
+        border-radius: 3.13vw;/*24px*/
+    }
+    
+    .boton_iniciar{
+        width: 41.28vw;/*317px*/
+        height: 13.67vw;/*105px*/
+    }
+    
+    .boton_agregar{
+        margin-top: 4.95vw;/*38px*/
+        width: 39.58vw;/*304px*/
+    }
 }
 
 @media screen and (min-width:992px){
