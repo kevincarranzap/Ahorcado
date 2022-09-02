@@ -4,6 +4,7 @@ boton_cancelar.addEventListener("click", function(){
     document.querySelector("#botones_principales").classList.remove("pagina_agregar_palabra");
     document.querySelector("#botones_principales").classList.add("pagina_bienvenida");
     document.querySelector(".entrada").style.display = "";
+    document.querySelector(".entrada").value = "";
     document.querySelector("#alerta").style.display = "";
     document.querySelector(".boton_iniciar").style.display = "";
     document.querySelector(".boton_agregar").style.display = "";

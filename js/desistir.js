@@ -6,7 +6,9 @@ boton_desistir.addEventListener("click", function(){
     document.querySelector(".ahorcado").style.display = "";
     document.querySelector(".adivinar").style.display = "";
     document.querySelector(".boton_iniciar").style.display = "";
+    document.querySelector(".boton_iniciar").classList.remove("juego_iniciado");
     document.querySelector(".boton_agregar").style.display = "";
     document.querySelector(".boton_nuevo").style.display = "";
     document.querySelector(".boton_desistir").style.display = "";
+    finalizado="";
 });
