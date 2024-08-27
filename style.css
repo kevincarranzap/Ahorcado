@@ -1,292 +1,338 @@
 body{
+    margin: 0;
     background-color: #F3F5FC;
-}
-
-.logo{
-    margin-top: 6.4vw;/*24px*/
-    margin-bottom: 6.4vw;/*24px*/
-    margin-left: 4.27vw;/*16px*/
-    width: 8.53vw;/*32px*/
-}
-
-.pagina_bienvenida{
-    margin-top: 45.07vw;/*169px*/
-}
-
-.pagina_agregar_palabra{
-    margin-top: 0;
-}
-
-.ahorcado{
-    display: none;
-    margin: 10.67vw auto;/*40px*/
-    margin-bottom: 0;
-    background-color: transparent;
-    width: 76.53vw;/*287px*/
-    height: 93.6vw;/*351px*/
-}
-
-.adivinar{
-    display: none;
-    margin: 10.67vw auto;/*40px*/
-    background-color: transparent;
-    width: 81.07vw;/*304px*/
-    height: 30.93vw;/*116px*/
-}
-
-.entrada{
-    display: none;
-    width: 91.47vw;/*343px*/
-    height: 62.67vw;/*235px*/
-    margin: 0 auto;
-    margin-top: 14.93vw;/*56px*/
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
+}
+
+.logo{
+    position: absolute;
+    top: 6.4vw;/*24px*/
+    left: 4.27vw;/*16px*/
+    width: 8.53vw;/*32px*/
+}
+
+.ocultado {
+    display: none;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+.home {
+    height: 100vh;
+    align-content: center;
+}
+
+.home__btn{
+    display: block;
+    margin: auto;
+    font-size: 1.4rem;
+    border-radius: 6vw;
+    border: 1px solid #0A3871;
+}
+
+.home__btn--add{
+    background-color: transparent;
+    color: #0A3871;
+    width: 75vw;
+    height: 18vw;
+}
+
+.home__btn--start{
+    background-color: #0A3871;
+    color: white;
+    width: 85vw;
+    height: 28vw;
+    margin-top: 4.27vw;/*16px*/
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+.add-word__input {
+    display: block;
+    width: 91.47vw;/*343px*/
+    height: 62.67vw;/*235px*/
+    margin: auto;
+    margin-top: 30vw;/*56px*/
+
     font-size: 8.53vw;/*16px*/
     line-height: 150%;
     color: #0A3871;
 
     background-color: transparent;
-    border: none;
     resize: none;
     outline: none;
+    
+    border: none;
 }
 
-.entrada::placeholder{
+.add-word__input::placeholder{
     color: #0A3871;
 }
 
-.entrada:focus{
+.add-word__input:focus::placeholder{
+    color: #67808E;
+}
+
+.add-word__input:focus-visible{
     outline: none;
 }
 
-#alerta{
-    display: none;
-}
-
-.alerta_gris svg, .alerta_roja svg{
-    width: 4.27vw;/*16px*/
-    margin-left: 4.27vw;/*16px*/
-    margin-right: 2.13vw;/*8px*/
-}
-
-.alerta_gris svg path{
-    fill: #67808E;
-}
-
-.alerta_gris, .alerta_roja{
+.add-word__warning {
     margin-top: 17.07vw;/*64px*/
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 3.2vw;/*12px*/
-    line-height: 150%;
-    color: #67808E;
-
     display: flex;
     align-items: center;
 }
 
-.alerta_roja svg path{
-    fill: #dc1515;
+.add-word__warning--symbol {
+    margin-left: 4.27vw;/*16px*/
+    margin-right: 2.13vw;/*8px*/
 }
 
-.alerta_roja{
-    color: #dc1515;
+.add-word__warning--text {
+    display: inline;
+    font-size: 3.2vw;/*12px*/
+    color: #67808E;
 }
 
-.boton_iniciar, .boton_agregar, .boton_guardar, .boton_cancelar, .boton_nuevo, .boton_desistir{
+.active-warning {
+    filter: brightness(0) saturate(100%) invert(22%) sepia(87%) saturate(4866%) hue-rotate(351deg) brightness(85%) contrast(103%);
+}
+
+.add-word__btn {
     display: block;
+    margin: auto;
     margin-top: 4.27vw;/*16px*/
-    margin-left: auto;
-    margin-right: auto;
-    width: 91.47vw;/*343px*/
-    height: 17.87vw;/*67px*/
+    width: 75vw;
+    height: 18vw;
 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 4.27vw;/*16px*/
-    line-height: 118%;
-
-    border: none;
-    border-radius: 6.4vw;/*24px*/
+    font-size: 1.4rem;
+    border-radius: 6vw;
+    border: 1px solid #0A3871;
 }
 
-.boton_guardar, .boton_cancelar, .boton_nuevo, .boton_desistir{
-    display: none;
-}
-
-.boton_iniciar, .boton_guardar, .boton_nuevo{
+.add-word__btn--save {
     background-color: #0A3871;
     color: white;
 }
 
-.boton_iniciar{
-    width: 84.53vw;/*317px*/
-    height: 28vw;/*105px*/
-}
-
-.boton_agregar, .boton_cancelar, .boton_desistir{
+.add-word__btn--cancel {
     background-color: transparent;
     color: #0A3871;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+.game__canvas {
+    display: block;
+    margin: auto;
+    background-color: transparent;
+}
+
+.game__canvas--hangman{
+    margin-top: 25vw;
+    width: 76.53vw;
+    height: 76.53vw;
+}
+
+.game__canvas--guess{
+    width: 76.53vw;
+    height: 29.20vw;
+}
+
+.game__btn {
+    display: block;
+    margin: auto;
+    margin-top: 4.27vw;/*16px*/
+    width: 75vw;
+    height: 18vw;
+
+    font-size: 1.4rem;
+    border-radius: 6vw;
     border: 1px solid #0A3871;
 }
 
-.boton_agregar{
-    width: 74.13vw;/*278px*/
+.game__btn--new{
+    background-color: #0A3871;
+    color: white;
 }
 
+.game__btn--withdraw{
+    background-color: transparent;
+    color: #0A3871;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
 @media screen and (min-width:600px){
     .logo{
-        margin-top: 9.73vw;/*74.72px*/
-        margin-bottom: 9.73vw;/*74.72px*/
-        margin-left: 5.21vw;/*40px*/
+        top: 9.73vw;/*74.72px*/
+        left: 5.21vw;/*40px*/
         width: 4.05vw;/*31.09px*/
     }
 
-    .pagina_bienvenida{
-        margin-top: 34.02vw;/*261.28px*/
-    }
-    
-    .pagina_agregar_palabra{
-        margin-top: 0;
-        margin-left: 5.21vw;/*40px*/
-        display: inline-flex;
-        gap: 3.13vw;/*24px*/
+    .home__btn{
+        font-size: 1.2rem;/*16px*/
+        border-radius: 3.13vw;/*24px*/
     }
 
-    .ahorcado{
-        margin: 5.21vw auto;/*40px*/
-        margin-bottom: 0;
-        width: 38.28vw;/*294px*/
-        height: 46.88vw;/*360px*/
-    }
-    
-    .adivinar{
-        margin: 7.29vw auto;/*56px*/
-        width: 60.42vw;/*464px*/
-        height: 23.05vw;/*177px*/
+    .home__btn--add{
+        width: 39.58vw;/*304px*/
+        height: 8.72vw;/*67px*/
     }
 
-    .entrada{
+    .home__btn--start{
+        width: 41.28vw;/*317px*/
+        height: 13.67vw;/*105px*/
+        margin-top: 2.08vw;/*16px*/
+    }
+    
+    /* --------------------------------------------------------------------------------------------------------------------- */
+
+    .add-word__input{
         width: 89.58vw;/*688px*/
-        height: 81.64vw;/*627px*/
-        margin-top: 5.38vw;/*41.28px*/
+        height: 40.64vw;/*627px*/
+        margin-top: 25vw;/*41.28px*/
         font-size: 4.17vw;/*32px*/
     }
     
-    .alerta_gris svg, .alerta_roja svg{
+    .add-word__warning{
+        margin-top: 0;
+    }
+
+    .add-word__warning--symbol{
         width: 2.08vw;/*16px*/
         margin-left: 5.21vw;/*40px*/
         margin-right: 1.04vw;/*8px*/
     }
-
-    .alerta_gris svg path{
-        fill: #495057;
-    }
     
-    .alerta_gris, .alerta_roja{
-        margin-top: 2.08vw;/*16px*/
-        font-size: 1.56vw;/*12px*/
+    .add-word__warning--text{
+        font-size: 1rem;/*12px*/
     }
 
-    .alerta_gris{
-        color: #495057;
-    }
-
-    .boton_iniciar, .boton_agregar, .boton_guardar, .boton_cancelar, .boton_nuevo, .boton_desistir{
+    .add-word__btn{
         margin-top: 2.08vw;/*16px*/
         width: 43.23vw;/*332px*/
         height: 8.72vw;/*67px*/
-
-        font-size: 2.08vw;/*16px*/
-        
+        font-size: 1.2rem;/*16px*/
         border-radius: 3.13vw;/*24px*/
     }
-    
-    .boton_iniciar{
-        width: 41.28vw;/*317px*/
-        height: 13.67vw;/*105px*/
+
+    /* --------------------------------------------------------------------------------------------------------------------- */
+    .game__canvas--hangman{
+        width: 46.88vw;
+        height: 46.88vw;
     }
     
-    .boton_agregar{
-        margin-top: 4.95vw;/*38px*/
-        width: 39.58vw;/*304px*/
+    .game__canvas--guess{
+        width: 46.88vw;
+        height: 17.88vw;
+    }
+
+    .game__btn{
+        margin-top: 2.08vw;/*16px*/
+        width: 43.23vw;/*332px*/
+        height: 8.72vw;/*67px*/
+        font-size: 1.2rem;/*16px*/
+        border-radius: 3.13vw;/*24px*/
     }
 }
-
+/* --------------------------------------------------------------------------------------------------------------------- */
 @media screen and (min-width:992px){
     .logo{
-        margin-top: 2.78vw;/*40px*/
-        margin-bottom: 2.78vw;/*40px*/
-        margin-left: 5.83vw;/*84px*/
-        width: 2.16vw;/*31.09px*/
+        top: 2.78vw;/*40px*/
+        left: 5.83vw;/*84px*/
+        width: 2.16vw;
     }
 
-    .pagina_bienvenida{
-        margin-top: 19.03vw;/*274px*/
-    }
-
-    .pagina_agregar_palabra{
-        margin-left: 26.11vw;/*376px*/
-        gap: 1.67vw;/*24px*/
-    }
-
-    .ahorcado{
-        margin-top: 3.47vw;/*50px*/
-        margin-left: 60.56vw;/*872px*/
-        margin-bottom: 2.95vw;/*43px*/
-        width: 20.42vw;/*294px*/
-        height: 25vw;/*360px*/
+    .home__btn{
+        font-size: 1.11vw;/*16px*/
+        border-radius: 1.67vw;/*24px*/
     }
     
-    .adivinar{
-        margin-top: -18.68vw;/*-269px*/
-        margin-left: 19.07vw;/*274px*/
-        width: 32.22vw;/*464px*/
-        height: 12.29vw;/*177px*/
-    }
-
-    .entrada{
-        width: 47.78vw;/*688px*/
-        height: 27.43vw;/*395px*/
-        margin-top: 2.22vw;/*32px*/
-        font-size: 2.22vw;/*32px*/
+    .home__btn--add{
+        width: 19.44vw;
+        height: 4.65vw;
     }
     
-    .alerta_gris svg, .alerta_roja svg{
+    .home__btn--start{
+        margin-top: 2.64vw;
+        width: 22.01vw;
+        height: 7.92vw;
+    }
+
+    /* --------------------------------------------------------------------------------------------------------------------- */    
+    .add-word__input{
+        width: 47.78vw;
+        height: 27.43vw;
+        margin-top: 10.30vw;
+        font-size: 2.22vw;
+    }
+
+    .add-word__warning{
+        margin-top: 1.11vw;/*16px*/
+    }
+
+    .add-word__warning--symbol{
         width: 1.11vw;/*16px*/
         margin-left: 26.11vw;/*376px*/
         margin-right: 0.56vw;/*8px*/
     }
-    
-    .alerta_gris, .alerta_roja{
-        margin-top: 1.11vw;/*16px*/
+
+    .add-word__warning--text{
         font-size: 0.83vw;/*12px*/
     }
 
-    .boton_iniciar, .boton_agregar, .boton_guardar, .boton_cancelar, .boton_nuevo, .boton_desistir{
-        margin-top: 1.11vw;/*16px*/
+    .add-word__btn-box{
+        display: flex;
+        justify-content: center;
+        gap: 1.5vw;
+        margin-top: 1.11vw;
+    }
+
+    .add-word__btn{
+        margin: 0;
         width: 23.06vw;/*332px*/
         height: 4.65vw;/*67px*/
-
         font-size: 1.11vw;/*16px*/
-        
         border-radius: 1.67vw;/*24px*/
     }
-    
-    .boton_iniciar{
-        font-size: 1.25vw;/*18px*/
-        width: 22.01vw;/*317px*/
-        height: 7.92vw;/*114px*/
+
+    /* --------------------------------------------------------------------------------------------------------------------- */
+
+    .game__canvas-box{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 8vw;
+        margin-top: 10vw;
+        margin-bottom: 7.8vw;
     }
-    
-    .boton_agregar{
-        margin-top: 2.64vw;/*38px*/
-        width: 19.44vw;/*280px*/
+
+    .game__canvas{
+        margin: 0;
+    }
+
+    .game__canvas--hangman{
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .game__canvas--guess{
+        width: 25vw;
+        height: 9.53vw;
+    }
+
+    .game__btn-box {
+        display: flex;
+        justify-content: center;
+        gap: 1.5vw;
+        margin-top: 1.11vw;
+    }
+
+    .game__btn{
+        margin: 0;
+        width: 23.06vw;/*332px*/
+        height: 4.65vw;/*67px*/
+        font-size: 1.11vw;/*16px*/
+        border-radius: 1.67vw;/*24px*/
     }
 }

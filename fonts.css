@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/Inter_18pt-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Sono_Monospace";
+    src: url("fonts/Sono-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Sono_Monospace";
+    src: url("fonts/Sono-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Sono_Monospace";
+    src: url("fonts/Sono-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Sono_Monospace";
+    src: url("fonts/Sono-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Sono_Monospace";
+    src: url("fonts/Sono-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Sono_Monospace";
+    src: url("fonts/Sono-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Sono_Monospace";
+    src: url("fonts/Sono-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+}
