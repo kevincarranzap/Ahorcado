@@ -121,6 +121,10 @@ body{
 }
 
 /* --------------------------------------------------------------------------------------------------------------------- */
+.game__canvas-box{
+    margin-top: 25vw;
+}
+
 .game__canvas {
     display: block;
     margin: auto;
@@ -128,14 +132,13 @@ body{
 }
 
 .game__canvas--hangman{
-    margin-top: 25vw;
     width: 76.53vw;
-    height: 76.53vw;
+    aspect-ratio: 1/1;
 }
 
 .game__canvas--guess{
     width: 76.53vw;
-    height: 29.20vw;
+    aspect-ratio: 21/8;
 }
 
 .game__btn {
@@ -218,12 +221,10 @@ body{
     /* --------------------------------------------------------------------------------------------------------------------- */
     .game__canvas--hangman{
         width: 46.88vw;
-        height: 46.88vw;
     }
     
     .game__canvas--guess{
         width: 46.88vw;
-        height: 17.88vw;
     }
 
     .game__btn{
@@ -313,12 +314,10 @@ body{
 
     .game__canvas--hangman{
         width: 25vw;
-        height: 25vw;
     }
 
     .game__canvas--guess{
         width: 25vw;
-        height: 9.53vw;
     }
 
     .game__btn-box {
