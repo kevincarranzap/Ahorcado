@@ -13,10 +13,6 @@ body{
     width: 8.53vw;/*32px*/
 }
 
-.ocultado {
-    display: none;
-}
-
 /* --------------------------------------------------------------------------------------------------------------------- */
 .home {
     height: 100vh;
@@ -54,6 +50,7 @@ body{
     margin: auto;
     margin-top: 30vw;/*56px*/
 
+    font-family: inherit;
     font-size: 8.53vw;/*16px*/
     line-height: 150%;
     color: #0A3871;
@@ -334,4 +331,16 @@ body{
         font-size: 1.11vw;/*16px*/
         border-radius: 1.67vw;/*24px*/
     }
+}
+
+.hidden {
+    display: none;
+}
+
+.disabled{
+    cursor: not-allowed;
+    pointer-events:none;
+    background-color: rgb(235, 235, 235);
+    color: rgb(168, 168, 168);
+    border-color: rgb(168, 168, 168);
 }

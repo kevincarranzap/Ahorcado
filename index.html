@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahorcado</title>
     <link rel="icon" href="pictures/logo.svg">
     <link rel="stylesheet" href="fonts.css">
@@ -20,33 +20,33 @@
     <main>
 
         <div class="home">
-            <button class="home__btn home__btn--add boton_agregar" type="button">Agregar nueva palabra</button>
-            <button class="home__btn home__btn--start boton_iniciar" type="button">Iniciar juego</button>
+            <button class="home__btn home__btn--add" type="button">Agregar nueva palabra</button>
+            <button class="home__btn home__btn--start" type="button">Iniciar juego</button>
         </div>
 
-        <div class="add-word ocultado">
-            <textarea class="add-word__input entrada" type="text" name="add word" placeholder="Ingrese una palabra"></textarea>
+        <div class="add-word hidden">
+            <textarea class="add-word__input" type="text" name="add word" placeholder="Ingrese una palabra"></textarea>
 
             <div class="add-word__warning">
                 <img class="add-word__warning--symbol" src="pictures/signo.svg" alt="signo de alerta">
-                <p class="add-word__warning--text">Máx. de 8 letras</p>
+                <p class="add-word__warning--text">Máx. de 8 letras y sin acentos</p>
             </div>
 
             <div class="add-word__btn-box">
-                <button class="add-word__btn add-word__btn--save boton_guardar" type="button">Guardar y empezar</button>
-                <button class="add-word__btn add-word__btn--cancel boton_cancelar" type="button">Cancelar</button>
+                <button class="add-word__btn add-word__btn--save disabled" type="button">Guardar y empezar</button>
+                <button class="add-word__btn add-word__btn--cancel" type="button">Cancelar</button>
             </div>
         </div>
 
-        <div class="game ocultado">
+        <div class="game hidden">
             <div class="game__canvas-box">
-                <canvas class="game__canvas game__canvas--hangman ahorcado" width="840" height="840"></canvas>
-                <canvas class="game__canvas game__canvas--guess adivinar" width="840" height="320"></canvas>
+                <canvas class="game__canvas game__canvas--hangman" width="840" height="840"></canvas>
+                <canvas class="game__canvas game__canvas--guess" width="840" height="320"></canvas>
             </div>
 
             <div class="game__btn-box">
-                <button class="game__btn game__btn--new boton_nuevo" type="button">Nuevo juego</button>
-                <button class="game__btn game__btn--withdraw boton_desistir" type="button">Desistir</button>
+                <button class="game__btn game__btn--new" type="button">Nuevo juego</button>
+                <button class="game__btn game__btn--withdraw" type="button">Desistir</button>
             </div>
         </div>
 

@@ -1,6 +1,6 @@
 var ctx_letters= canvas_letters.getContext("2d");
 ctx_letters.scale(3,3);/* se aumenta la calidad del canvas al renderizar a una resolución inferior mayor y luego escalarlo*/
-ctx_letters.font = "bold 32px Sono_Monospace";
+ctx_letters.font = "bold 32px Sono";
 
 function draw_initial_letters(){
     ctx_letters.lineWidth = 6;/* grosor de linea */
@@ -36,7 +36,7 @@ function draw_letters_remaining(){
     }
 }
 
-function verify_letter(pressed_key){
+function check_letter(pressed_key){
     if(!pressed_keys.includes(pressed_key)){
         pressed_keys.push(pressed_key);
         if(secret_word.includes(pressed_key)){
@@ -63,6 +63,6 @@ function verify_letter(pressed_key){
 document.onkeydown = (e) => {
     if (game_active) {
         //credits to --> https://internetdrew.medium.com/how-to-detect-a-letter-key-on-key-events-with-javascript-c749820dcd27
-        if(e.code===`Key${e.key.toUpperCase()}` || e.code=="Semicolon") verify_letter(e.key.toUpperCase());
+        if(e.code===`Key${e.key.toUpperCase()}` || e.code=="Semicolon") check_letter(e.key.toUpperCase());
     }
 }

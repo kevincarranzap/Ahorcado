@@ -33,8 +33,8 @@ btn_new.addEventListener("click", function(){
 var btn_withdraw = document.querySelector(".game__btn--withdraw");
 
 btn_withdraw.addEventListener("click", function(){
-    document.querySelector(".home").classList.remove("ocultado");
-    document.querySelector(".game").classList.add("ocultado");
+    document.querySelector(".home").classList.remove("hidden");
+    document.querySelector(".game").classList.add("hidden");
 
     clear_game();
     game_active=false;
